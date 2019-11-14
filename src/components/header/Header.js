@@ -1,75 +1,49 @@
-import React, { Fragment } from 'react';
-import Button from '@material-ui/core/Button';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
+import React, { Fragment, Component } from 'react';
 
-const useStyles = makeStyles(theme => ({
-    icon: {
-        marginRight: theme.spacing(2)
-    },
-    heroContent: {
-        backgroundColor: theme.palette.background.paper,
-        padding: theme.spacing(8, 0, 6)
-    },
-    heroButtons: {
-        marginTop: theme.spacing(4)
-    },
-    cardGrid: {
-        paddingTop: theme.spacing(8),
-        paddingBottom: theme.spacing(8)
+class Header extends Component {
+    constructor() {
+        super();
+        this.state = {
+            handleSearchChange: event => {
+                console.log(event.target.value);
+                const filter = event.target.value;
+                const filteredList = this.state.users.filter(item => {
+                    // merge data together, then see if user input is anywhere inside
+                    let values = Object.values(item)
+                        .join('')
+                        .toLowerCase();
+                    return values.indexOf(filter.toLowerCase()) !== -1;
+                });
+                this.setState({ filteredUsers: filteredList });
+            }
+        };
     }
-}));
-
-export default function Header() {
-    const classes = useStyles();
-
-    return (
-        <Fragment>
-            <CssBaseline />
-            <main>
-                {/* Hero unit */}
-                <div className={classes.heroContent}>
-                    <Container maxWidth='sm'>
-                        <Typography
-                            component='h1'
-                            variant='h2'
-                            align='center'
-                            color='textPrimary'
-                            gutterBottom
-                        >
-                            Album layout
-                        </Typography>
-                        <Typography
-                            variant='h5'
-                            align='center'
-                            color='textSecondary'
-                            paragraph
-                        >
-                            Something short and leading about the collection
-                            below—its contents, the creator, etc. Make it short
-                            and sweet, but not too short so folks don&apos;t
-                            simply skip over it entirely.
-                        </Typography>
-                        <div className={classes.heroButtons}>
-                            <Grid container spacing={2} justify='center'>
-                                <Grid item>
-                                    <Button variant='contained' color='primary'>
-                                        Main call to action
-                                    </Button>
-                                </Grid>
-                                <Grid item>
-                                    <Button variant='outlined' color='primary'>
-                                        Secondary action
-                                    </Button>
-                                </Grid>
-                            </Grid>
+    render() {
+        return (
+            <Fragment>
+                <div
+                    className='section no-pad-bot teal lighten-5'
+                    id='index-banner'
+                >
+                    <div className='container'>
+                        <br />
+                        <br />
+                        <h3 className='header center blue-text'>Welcome To</h3>
+                        <h1 className='header center blue-text text-darken-2'>
+                            Employee Directory
+                        </h1>
+                        <div className='row center'>
+                            <h5 className='header col s12 light blue-text text-darken-4'>
+                                Type into the search box to find the user you're
+                                looking for
+                            </h5>
                         </div>
-                    </Container>
+                        <br />
+                        <br />
+                    </div>
                 </div>
-            </main>
-        </Fragment>
-    );
+            </Fragment>
+        );
+    }
 }
+export default Header;

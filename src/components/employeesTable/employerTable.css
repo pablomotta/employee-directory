@@ -1,0 +1,9 @@
+.root {
+    width: '100%';
+    overflow-x: scroll;
+    padding: 5%;
+}
+
+.table {
+    min-width: 800px;
+}
