@@ -69,7 +69,6 @@ class EmployeesTable extends Component {
                 this.setState({ filteredUsers: sortedUsers });
             },
             handleSearchChange: event => {
-                console.log(event.target.value);
                 const filter = event.target.value;
                 const filteredList = this.state.users.filter(item => {
                     // merge data together, then see if user input is anywhere inside
