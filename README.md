@@ -1,3 +1,18 @@
+# Employee Directory
+
+![App Logo](src/img/image.png)
+
+---
+
+### Employee Directory is a frontend app create with React.js. The app loads users from an api and displays users in on a table.
+
+With this app users can:
+
+-   Search for users on search filter
+-   Change the order of the table by ascending or descending by clicking on the name.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
