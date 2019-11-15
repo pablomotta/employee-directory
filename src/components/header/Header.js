@@ -35,7 +35,10 @@ class Header extends Component {
                         <div className='row center'>
                             <h5 className='header col s12 light blue-text text-darken-4'>
                                 Type into the search box to find the user you're
-                                looking for
+                                looking for.
+                            </h5>
+                            <h5 className='header col s12 light blue-text text-darken-4'>
+                                Click on <b>name</b> to reorder contacts.
                             </h5>
                         </div>
                         <br />

@@ -1,4 +1,5 @@
 import React from 'react';
+import './employerTable.css';
 
 function TableHead({ headings, handleSort }) {
     return (
@@ -7,6 +8,7 @@ function TableHead({ headings, handleSort }) {
                 {headings.map(({ name, width }) => {
                     return (
                         <th
+                            className='row-title'
                             key={name}
                             style={{ width }}
                             onClick={() => {

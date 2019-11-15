@@ -18,14 +18,6 @@ function SearchBox({ handleSearchChange }) {
                             Search
                         </label>
                     </div>
-                    {/* <div className='input-field col s6'>
-                        <button
-                            className='btn-large waves-effect waves-light orange'
-                            type='submit'
-                        >
-                            Search
-                        </button>
-                    </div> */}
                 </form>
             </div>
             <br />
