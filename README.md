@@ -15,10 +15,38 @@ With this app users can:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+---
+
 ## Prerequisites
 
 -   [npm](https://www.npmjs.com/get-npm)
 -   [NodeJS](https://nodejs.org/en/)
+
+---
+
+## Author
+
+-   **Pablo Motta** - [github profile](https://github.com/pablomotta)
+
+---
+
+## Installation
+
+### Database:
+
+In your MySQL Workbench run the code:
+
+`DROP DATABASE IF EXISTS Pick_Up_Group_DB; CREATE DATABASE Pick_Up_Group_DB; USE Pick_Up_Group_DB;`
+
+### Application:
+
+On your command line, run the following commands:
+
+-   `Git clone git@github.com:pablomotta/employee-directory.git`
+
+-   `npm install`
+
+-   `npm start`
 
 ---
 
