@@ -34,13 +34,13 @@ class EmployeesTable extends Component {
 
                 const compareFnc = (a, b) => {
                     if (this.state.order === 'ascend') {
-                        // account for missing values
+                        // compares account for missing values.
                         if (a[heading] === undefined) {
                             return 1;
                         } else if (b[heading] === undefined) {
                             return -1;
                         }
-                        // numerically
+                        // compares numerically.
                         else if (heading === 'name') {
                             return a[heading].first.localeCompare(
                                 b[heading].first
@@ -49,13 +49,13 @@ class EmployeesTable extends Component {
                             return a[heading] - b[heading];
                         }
                     } else {
-                        // account for missing values
+                        // compares account for missing values.
                         if (a[heading] === undefined) {
                             return 1;
                         } else if (b[heading] === undefined) {
                             return -1;
                         }
-                        // numerically
+                        // compares numerically.
                         else if (heading === 'name') {
                             return b[heading].first.localeCompare(
                                 a[heading].first
@@ -71,7 +71,7 @@ class EmployeesTable extends Component {
             handleSearchChange: event => {
                 const filter = event.target.value;
                 const filteredList = this.state.users.filter(item => {
-                    // merge data together, then see if user input is anywhere inside
+                    // merge data together, then see if user input is anywhere inside.
                     let values = Object.values(item)
                         .join('')
                         .toLowerCase();
