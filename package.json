@@ -1,5 +1,6 @@
 {
     "name": "employee-directory",
+    "author": "Pablo Motta",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
