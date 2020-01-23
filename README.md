@@ -24,21 +24,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ---
 
-## Author
-
--   **Pablo Motta** - [github profile](https://github.com/pablomotta)
-
----
-
 ## Installation
-
-### Database:
-
-In your MySQL Workbench run the code:
-
-`DROP DATABASE IF EXISTS Pick_Up_Group_DB; CREATE DATABASE Pick_Up_Group_DB; USE Pick_Up_Group_DB;`
-
-### Application:
 
 On your command line, run the following commands:
 
@@ -47,6 +33,18 @@ On your command line, run the following commands:
 -   `npm install`
 
 -   `npm start`
+
+---
+
+## Author
+
+-   **Pablo Motta** - [github profile](https://github.com/pablomotta)
+
+---
+
+## Live App
+
+[Click here to visit the live website.](https://pablomotta.github.io/employee-directory/)
 
 ---
 
