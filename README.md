@@ -15,6 +15,13 @@ With this app users can:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Prerequisites
+
+-   [npm](https://www.npmjs.com/get-npm)
+-   [NodeJS](https://nodejs.org/en/)
+
+---
+
 ## Available Scripts
 
 In the project directory, you can run:
