@@ -1,0 +1,13 @@
+.root {
+    width: '100%';
+    overflow-x: auto;
+    padding: 5%;
+}
+
+.table {
+    min-width: 800px;
+}
+
+.row-title {
+    cursor: pointer;
+}
